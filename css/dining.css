@@ -175,6 +175,8 @@ input, textarea /*styles the form*/ {
 /* 4. ---Main Hero Image Contact--- */
 
 .fas /*styles the icon*/ {
+   font-size: 42px;
+   color: #9a2018;
    margin: 0 auto;
    float: left;
 }
@@ -189,11 +191,24 @@ input, textarea /*styles the form*/ {
    margin-right: 10px;
 }
 
+.s2img {
+   font-size: 42px;
+   margin: 0 auto;
+   float: left;
+}
+
+.s2img-pos {
+   margin-right: 10px;
+   margin-left: 3px;
+   margin-bottom: 20px;
+}
+
 #contact {
    font-size: 11px;
    background-color: #efefef;
-   padding-top: 30px;
+   padding-top: 40px;
    padding-bottom: 30px;
+   margin-bottom: 10px;
 }
 
 /* 5. ---Why Choose Us--- */

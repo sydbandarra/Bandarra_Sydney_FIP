@@ -189,8 +189,9 @@ input, textarea /*styles the form*/ {
 #contact {
    font-size: 11px;
    background-color: #efefef;
-   padding-top: 30px;
+   padding-top: 40px;
    padding-bottom: 30px;
+   margin-bottom: 10px;
 }
 
 /* 5. ---Why Choose Us--- */
