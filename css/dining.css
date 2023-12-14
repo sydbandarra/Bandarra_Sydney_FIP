@@ -396,6 +396,30 @@ input, textarea /*styles the form*/ {
    line-height: 22px;
 }
 
+/*DINING HOURS*/
+#dining-hrs-hero-con {
+   height: 304px;
+   background: url(../images/ds8-img.jpg) no-repeat;
+}
+
+#dining-hrs-heading-box {
+   align-self: end;
+}
+
+#dining-hrs-text {
+   padding-bottom: 15px;
+}
+
+#dining-hrs-text p {
+   font-size: 14px;
+   margin-bottom: 20px;
+   line-height: 22px;
+}
+
+#book-now-hours {
+   height: 80px;
+}
+
 
 
 
