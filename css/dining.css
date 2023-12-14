@@ -46,6 +46,11 @@ input, textarea /*styles the form*/ {
    color: #9a2018;
 }
 
+.red-body {
+   font-size: 12pt;
+   color: #B50202;
+}
+
 
 /* 2. ---Main Nav / toggle menu--- */
 
@@ -113,8 +118,8 @@ input, textarea /*styles the form*/ {
 /* 3. ---Main Hero Image--- */
 
 #hero {
-   height: 200px; /*set the height of the section. default would only be as high as the text content height must = height of image*/
-   background: url(../images/hero-main.jpg); /*no '' necessary. exception to the rule. redirects to main folder  = ../ must redirect because we a realtively in the css folder, must exit css folder>main folder>images to retrieve the image.*/
+   height: 210px; /*set the height of the section. default would only be as high as the text content height must = height of image*/
+   background: url(../images/dining-hero-img.jpg); /*no '' necessary. exception to the rule. redirects to main folder  = ../ must redirect because we a realtively in the css folder, must exit css folder>main folder>images to retrieve the image.*/
 }
 
 .book-now {
@@ -269,28 +274,66 @@ input, textarea /*styles the form*/ {
 
 /* 6. ---About & FAQ--- */
 
-#about-hero-con {
-   height: 195px;
-   background: url(../images/ds3-img-1.jpg) no-repeat;
+/*ENTREES*/
+#entrees-hero-con {
+   height: 229px;
+   background: url(../images/ds3-img.jpg) no-repeat;
 }
 
-#about-hero-heading-box {
+#entrees-heading-box {
    align-self: end;
 }
 
-#about-us-text {
-   padding-bottom: 60px;
+#entrees-text {
+   padding-bottom: 15px;
 }
 
-#about-us-text p {
+#entrees-text p {
    font-size: 14px;
    margin-bottom: 20px;
    line-height: 22px;
 }
 
-#about-us-text-column2 {
-   font-style: italic;
+/*STARTERS*/
+#starters-hero-con {
+   height: 225px;
+   background: url(../images/ds4-img.jpg) no-repeat;
 }
+
+#starters-heading-box {
+   align-self: end;
+}
+
+#starters-text {
+   padding-bottom: 15px;
+}
+
+#starters-text p {
+   font-size: 14px;
+   margin-bottom: 20px;
+   line-height: 22px;
+}
+
+/*DESSERTS*/
+#desserts-hero-con {
+   height: 229px;
+   background: url(../images/ds5-img.jpg) no-repeat;
+}
+
+#desserts-heading-box {
+   align-self: end;
+}
+
+#desserts-text {
+   padding-bottom: 15px;
+}
+
+#desserts-text p {
+   font-size: 14px;
+   margin-bottom: 20px;
+   line-height: 22px;
+}
+
 
 #faq-con {
    background-color: #f4f4f4;
