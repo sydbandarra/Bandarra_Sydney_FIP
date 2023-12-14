@@ -118,7 +118,7 @@ input, textarea /*styles the form*/ {
 /* 3. ---Main Hero Image--- */
 
 #hero {
-   height: 210px; /*set the height of the section. default would only be as high as the text content height must = height of image*/
+   height: 200px; /*set the height of the section. default would only be as high as the text content height must = height of image*/
    background: url(../images/dining-hero-img.jpg); /*no '' necessary. exception to the rule. redirects to main folder  = ../ must redirect because we a realtively in the css folder, must exit css folder>main folder>images to retrieve the image.*/
 }
 
