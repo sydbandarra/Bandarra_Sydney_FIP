@@ -420,6 +420,11 @@ input, textarea /*styles the form*/ {
    height: 80px;
 }
 
+#place-order-button {
+   height: 100px;
+   margin-bottom: 16px;
+}
+
 
 
 
