@@ -349,6 +349,28 @@ input, textarea /*styles the form*/ {
    line-height: 22px;
 }
 
+/*OTHER MENUS BUTTONS*/
+
+#other-menus-con {
+   padding-bottom: 6px;
+}
+#other-menus-heading-box {
+   align-self: end;
+}
+
+.other-menus-buttons {
+   margin-bottom: 16px;
+}
+
+.other-menus-buttons h3 {
+   background: #9a2018;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   font-style: italic;
+   text-align: center; 
+}
+
 
 #faq-con {
    background-color: #f4f4f4;
