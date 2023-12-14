@@ -1,0 +1,60 @@
+/* ---Mini CSS reset--- */
+
+body, p, h1, h2, h3, h4, h5 {
+   margin: 0px; 
+   padding: 0px;
+}
+
+/* ---Utility Classes--- */
+
+.hidden {
+   display: none;
+}
+
+/* ---Mobile Library Grid Styles--- */
+
+ .grid-con { 
+   max-width: 412px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   display: grid; /*set the elements in this container into a grid format*/
+   grid-template-columns: repeat(4, 73px); /*make this a grid with 4 columns, 73px wide each column*/
+   column-gap: 30px;
+}
+
+.col-span-full {
+   grid-column: 1/-1; /*spans from one end to the other*/
+}
+
+/*the following span styling allows up to have options for divs. ie. if an html element must be 2 columns wide starting at column 3  it is spanning 2 columns, use class col-start-3 and col-span-2*/
+/*specifies the column starts. best practicies. less work than class specific ie. column-span: 1/2*/
+.col-start-1 {
+   grid-column-start: 1;
+}
+.col-start-2 {
+   grid-column-start: 2;
+}
+.col-start-3 {
+   grid-column-start: 3;
+}
+.col-start-4 {
+   grid-column-start: 4;
+}
+
+/*col-span specifies options for html styling. span 1 / span 1 =span 1 column*/ 
+.col-span-1 {
+   grid-column: span 1 / span 1; /*col-start-1 + col-span-1, spans 1 column*/
+}
+/*col-start-1 + col-span-3, spans 2 columns (3 column lines) starting at col-1 line, count until column line 3 therefore the element spans two full columns*/
+.col-span-2 {
+   grid-column: span 2 / span 2; 
+}
+
+.col-span-3 {
+   grid-column: span 3 / span 3; 
+}
+
+.col-span-4 {
+   grid-column: span 3 / span 3; 
+}
