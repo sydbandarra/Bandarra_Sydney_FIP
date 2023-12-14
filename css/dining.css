@@ -531,6 +531,44 @@ input, textarea /*styles the form*/ {
    width: 150px; /*set the width of the button*/
    align-self: flex-end; /*will align the button to the very end of the flex container of the form*/
 }
+/*CHECKBOX*/
+.checkbox-container {
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.checkbox-container label {
+   padding-left: 10px;
+   margin-right: 15px;
+}
+
+#agree-checkbox  {
+   margin-left: 5px;
+}
+
+input[type="checkbox"]:checked + span::after /*target the input type checkbox when it is selected it will target the span and place it after the span*/ {
+   content: "\2713"; /*unicode for a checkmark*/
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background-color: #D82323;
+   border: 5px solid #B50202;
+   font-size: 16px;
+   color: #fff;
+   text-align: center;
+   position: absolute; /*checkbox will position itself top right of the container*/
+   top: 0px;
+   right: 40px;
+   animation: fadeIn 0.7s; /*link animation to keyframes*/
+}
+
+@keyframes fadeIn {
+   from {opacity: 0;}
+   to {opacity: 1;}    
+}
+
+
 
 
 

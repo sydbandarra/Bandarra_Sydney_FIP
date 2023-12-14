@@ -13,7 +13,7 @@
 <!--links to css-->
     <link href="css/grid.css" rel="stylesheet" type="text/css">
     <link href="css/dining.css" rel="stylesheet" type="text/css">
-    <title>Welcome to The Couples Resort</title>
+    <title>Dining at Couples Resort</title>
 </head>
     <body>
         <div id="mobile-outline">
@@ -34,7 +34,7 @@
                             <li><a href="#">Rooms</a></li>
                             <li><a href="#">Packages</a></li>
                             <li><a href="dining.html">Dining</a></li>
-                            <li><a href="#">Spa Activites</a></li>
+                            <li><a href="spa.html">Spa Activites</a></li>
                             <li><a href="#">Reservations</a></li>
                         </ul>
                     </div>
@@ -372,15 +372,19 @@
                 <h3 class="hidden">Phone, Fax and Email</h3>
                 <p>Toll Free:+1 877 201-1156<br>
                     FAX:+1 613 638 2217<br>
-                    E-mail: info[at]coupleresort.com </p>         
+                    E-mail: info&#64;coupleresort.com </p>         
             </div>
             <div id="contact-hero-form" class="col-span-full">
                 <form action="email.php" method="POST" enctype="text/plain">
                     <input name="fullName" type="text" placeholder="First & Last Name">
                     <input name="contactInfo" type="text" required placeholder="Phone number or Email">
                     <textarea name="msg" placeholder="Enter your questions, comments or concerns here..."></textarea>
-                    <input name="submit" type="submit" value="Send">
+                    <input name="submit" id="submit-button" type="submit" value="Send">
                 </form>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agree-checkbox" name="agree-checkbox" required>
+                    <span><label for="agree-checkbox">I agree to the terms and conditions</label></span>
+                </div>
             </div>
         </section>
 <!--Footer-->  
@@ -394,7 +398,7 @@
                     <p>
                         Toll Free:+1 877 201-1156<br>
                         FAX:+1 613 638 2217<br>
-                        E-mail: info@coupleresort.com
+                        E-mail: info&#64;coupleresort.com
                     </p>
                 </section>
                 <div id="footer-privacy" class="col-span-full line-separator">
