@@ -51,6 +51,10 @@ input, textarea /*styles the form*/ {
    color: #B50202;
 }
 
+.red-body-2 {
+   color: #B50202;
+}
+
 
 /* 2. ---Main Nav / toggle menu--- */
 
@@ -370,6 +374,32 @@ input, textarea /*styles the form*/ {
    font-style: italic;
    text-align: center; 
 }
+
+/*Dining at Couples Resort*/
+
+#dining-at-hero-con {
+   height: 229px;
+   background: url(../images/ds7-img.jpg) no-repeat;
+}
+
+#dining-at-heading-box {
+   align-self: end;
+}
+
+#dinging-at-text {
+   padding-bottom: 15px;
+}
+
+#dining-at-text p {
+   font-size: 14px;
+   margin-bottom: 20px;
+   line-height: 22px;
+}
+
+#dining-at-text-column1 :nth-child(odd) {
+   background-color: #efefef;
+}
+
 
 
 #faq-con {
