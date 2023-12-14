@@ -386,7 +386,7 @@ input, textarea /*styles the form*/ {
    align-self: end;
 }
 
-#dinging-at-text {
+#dining-at-text {
    padding-bottom: 15px;
 }
 
@@ -396,9 +396,6 @@ input, textarea /*styles the form*/ {
    line-height: 22px;
 }
 
-#dining-at-text-column1 :nth-child(odd) {
-   background-color: #efefef;
-}
 
 
 
