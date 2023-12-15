@@ -536,6 +536,7 @@ input, textarea /*styles the form*/ {
    display: flex;
    align-items: center;
    position: relative;
+   margin-bottom: 30px;
 }
 
 .checkbox-container label {
