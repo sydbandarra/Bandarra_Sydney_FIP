@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--links to external resources, set the fonts you would like to use-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--links to css styles that are required for the font-->
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+        <!--downloads the particular font family-->
+<!--script tag links html to javascript. It is used here to bring in an external javascript library to use icons-->   
+    <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
+<!--links to css-->
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/spa.css" rel="stylesheet" type="text/css">
+    <title>Spa Activites at Couples Resort</title>
+</head>
+    <body>
+        <div id="mobile-outline">
+        <h1 class="hidden">Welcome to The Couples Resort</h1>
+<!-- Main Nav -->         
+            <header class="grid-con" id="main-header">
+                <nav id="main-nav" class="col-span-full"> <!--parent-->
+                    <h2 class="hidden">Main Navigation</h2>
+                    <!--this allows the menu to function as a hamburger menu-->
+                    <input type="checkbox" id="hamburger"><!--siblings-->
+                    <label for="hamburger"> <!--for= connects to the id-->
+                        <img src="images/burger.svg" alt='hamburger menu icon'>
+                    </label>
+
+                    <div id="burger-con"><!--siblings-->
+                        <ul>
+                            <li><a class="selected" href="index.html">Home</a></li> <!--.selected applied to the html of the specific page. ex. move it to dining on dining.html-->
+                            <li><a href="#">Rooms</a></li>
+                            <li><a href="#">Packages</a></li>
+                            <li><a href="dining.html">Dining</a></li>
+                            <li><a href="spa.html">Spa Activites</a></li>
+                            <li><a href="#">Reservations</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="logo" class="col-span-full">
+                    <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
+                </div>
+            </header>        
+<!-- Main Hero -->
+        <section id="hero" class="grid-con"> <!--must apply the grid class to the parent container, then the col-span/col-start class will be used by the child elements-->
+            <h2 class="hidden">Book a stay with us</h2>                       
+            <div id="book-now-hero" class="book-now col-start-3 col-span-2"><!--column starts at line 3 and spans 2 columns-->
+                <p>Book Now</p>
+            </div>
+            <section id="hero-heading-box" class="col-span-full">
+                <h2 class="hero-img-h2">
+                    <!--span element allows us to style this text seperately to the <span>-->
+                    <!--<br> line break function-->
+                    <!--&amp; amperstand function-->
+                    <span>Couples Resort</span><br>Spa Activites
+                </h2>
+            </section>
+        </section>
+<!--Hero Body-->          
+        <div class="grid-con">
+            <section id="hero-summary" class="col-span-full line-separator"><!--line separator class applies the red line break for each section heading. Can use multiple classes-->
+                <h2 class="hidden">Summary of our Spa Activities</h2>
+                <p>Before your treatment we invite you to begin your relaxing spa experience in the comfort of your own accommodations with the use of any wet treatment of sauna, steam bath, hot-tub or Whirlpool Bath Tub, depending on your accommodation.</p>
+                <p>As part of the Algonquin Spa you have access to our fitness / sauna room. It is a beautiful cedar sunroom with a fantastic view over the 3 season Swimming Pool and Galeairy Lake. There are free-weights, benches, a bike machine, a concept 2 rowing machine and a tread mill. The sunroom also has all the amenities with washrooms and showers, TV and VCR for work out videos, mats, and a drink cooler. After your workout or at the end of your day, revive your soul in the sauna. The heat will soothe your muscles and purify your skin . . . Perfect! From here you have easy access to the outdoor heated salt-water pool. Relax and melt away, or do a few laps, it is all yours.</p>
+                <a href="https://www.healthylivingandtravel.com/top-100-spas-of-2013/" class="red-body-2">AWARDED ONE OF NORTH AMERICA'S TOP 100 SPAS (#61)</a>
+                <br>
+                <p></p>
+                <a href="https://www.couplesresort.ca/docs/pdf/spaFeaturedStory.pdf" class="red-body-2">A Natural & Organic Destination Spa - Feature Story North American Inns</a>
+                <p></p>
+            </section>
+        </div>
+<!--Intro Contact-->
+        <section id="contact" class="grid-con">
+            <h2 class="hidden">Contact Us</h2>              
+            <div class="col-start-2 col-span-2">
+                <i class="fas fa-mobile-alt"></i> <!--fas (fontawesome style) = links to css to style the icons. ex. colour--><!--i= insert external file. used here to use the mobile icon. This line of code is copied from fontawesome icon specific provided code.-->
+                <p id="hero-numbers">
+                    Toll Free:+1 866 202-1179<br>
+                    Fax:+1 613 637 2615<br>
+                    info@coupleresort.com
+                    <!-- discuss email obfuscation  -->
+                </p>   
+            </div>
+            <div class="col-start-2 col-span-2">
+                <i class="fas fa-map-marker-alt"></i>
+                <p id="hero-address">
+                    1198 Osprey Rd, (End of)<br>
+                    Minden, Soyers Lake, ON<br>
+                    K0M 2K0
+                </p>   
+            </div>
+        </section>
+<!-- Why Choose Us -->
+        <div id="why-choose-us">  
+            <div class="grid-con">
+                <nav id="why-choose-us-nav" class="col-span-full">
+                    <h2 class="hidden">Nav for why choose us</h2>
+                    <ul>
+                        <li><a class="selected" href="#">Why Choose Couples Resort</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>                
+        </div>
+<!--ALGONQUIN SPA FEATURES-->
+        <div id="spa-features-con">
+            <div id="spa-features-hero-con" class="grid-con">                
+                <div id="spa-features-heading-box" class="col-span-full">
+                    <h2 class="hero-img-h2"><span>Couples Resort</span><br>Algonquin Spa Features</h2>
+                </div>           
+            </div>
+            
+            <div class="grid-con">
+                <div id="spa-features-text" class="col-span-full line-separator">
+                    <article id="spa-features-text-column1">
+                        <h2 class="hidden">Algonquin Spa Features</h2>
+                    <p><span class="red-body">Come &amp; Relax</span> at Ontario's finest destination resort spas. Offering many spa packages for couples, honeymooners and anniversaries.</p>
+                    <p><span class="red-body">Divine - (2 hours) $208.00*</span><br>A Divine treatment! Enjoy a glass of our house red or white wine, while having your hands and feet pampered with a manicure and a pedicure.</p>
+                    <p><span class="red-body">Heaven - (4 hours) $477.00*</span><br>This is a Divine Indulgence, includes the following: Scrub, Body Wrap, Facial, Relaxing Body Molding, Manicure or Pedicure. With snack and beverage.</p>
+                    <p><span class="red-body">Rejuvenating Body Package - (3 hours) $384.00*</span><br>Body Molding then a Body Scrub, Wrap and Facial. With snack and beverage.</p>
+                    <p><span class="red-body">Solstice in the Day (3 hours) $274.00*</span><br>This will make you feel like Royalty with utmost pampering and care. Package includes a mini-facial or mini-body molding. Manicure and Pedicure. With snack and beverage.</p>
+                    </article>
+                </div>
+            </div>    
+        </div>
+
+<!--REGISTERED MASSAGE THERAPY-->
+<div id="rmt-con">
+    <div id="rmt-hero-con" class="grid-con">                
+        <div id="rmt-heading-box" class="col-span-full">
+            <h2 class="hero-img-h2"><span>Couples Resort</span><br>Registered Massage Therapy</h2>
+        </div>           
+    </div>
+    
+    <div class="grid-con">
+        <div id="rmt-text" class="col-span-full line-separator">
+            <article id="rmt-text-column1">
+                <h2 class="hidden">Registered Massage Therapy</h2>
+            <p><span class="red-body">Touching is healing;</span> from a mother’s touch which comforts and soothes her baby to the triumphant athlete patted on the back by fellow athletes. Based on the same principle as human touch, massage is the oldest method of promoting good health, suppleness and strength.</p>
+            <p>Today, the role of massage therapy is recognized by the general public and other health care professionals as being an effective health care alternative.</p>
+            <p>Due to public perception and desire, massage therapy has grown into a more prominent position. It is a viable and respected profession promoting good health not only for your physical but emotional well being also.</p>
+            <p><span class="red-body">Massage Therapy</span> is the kneading, manipulation or application of methodical pressure and friction of the body. Whether it is for treatment of injury, stress or for relaxation, the skilled use of massage through touch is used to maintain and enhance the health and well being of the entire body. Experience the benefits massage can offer you.</p>
+            <p class="red-body-2"><span class="red-body">Registered Massage Therapy</span><br>In Spa Only: 30 min $96 * / 60 min $186 * / 90 min $276 *</p>
+            </article>
+        </div>
+    </div>    
+</div>
+
+
+<!--
+<div id="s4-con">
+    <div id="s4-hero-con" class="grid-con">                
+        <div id="s4-heading-box" class="col-span-full">
+            <h2 class="hero-img-h2"><span>Couples Resort</span><br>Hot Stones, Body Molding, Indian Head Massage</h2>
+        </div>           
+    </div>
+    
+    <div class="grid-con">
+        <div id="s4-text" class="col-span-full line-separator">
+            <article id="s4-text-column1">
+                <h2 class="hidden">Hot Stones, Body Molding, Indian Head Massage</h2>
+            <p><span class="red-body"></span><br><br><span class="red-body-2"></span></p>
+            <p><span class="red-body"></span><br><br><span class="red-body-2"></span></p>
+            <p><span class="red-body"></span><br><br><span class="red-body-2"></span></p>
+            <p><span class="red-body"></span><br><br><span class="red-body-2"></span></p>
+            <p><span class="red-body"></span><br><br><span class="red-body-2"></span></p>
+            </article>
+        </div>
+    </div>    
+</div>
+-->
+
+<!--HOT STONES, BODY MOLDING, INDIAN HEAD MASSAGE-->
+<div id="s4-con">
+    <div id="s4-hero-con" class="grid-con">                
+        <div id="s4-heading-box" class="col-span-full">
+            <h2 class="hero-img-h2"><span>Couples Resort</span><br>Hot Stones, Body Molding, Indian Head Massage</h2>
+        </div>           
+    </div>
+    
+    <div class="grid-con">
+        <div id="s4-text" class="col-span-full line-separator">
+            <article id="s4-text-column1">
+                <h2 class="hidden">Hot Stones, Body Molding, Indian Head Massage</h2>
+            <p><span class="red-body">Relaxing Body Molding Treatment</span><br>Escape from your worries during this very relaxing full body treatment. Using body work techniques personalized to your specific needs we will release muscular tension and stress to calm and soothe your body. This heavenly treatment will not only bring relief and enjoyment, it will improve circulation, restore proper muscle balance and replenish your system.<br><span class="red-body-2">Available Spa: 60min $132.* : 30min $70.*</span></p>
+            <p><span class="red-body">Ayurveda Indian Head Massage</span><br>Ayurveda Indian Head Massage is a relaxing massage that stimulates the acupressure points on the head, upper back, shoulders, neck and face. It promotes circulation, rebalance energy and releases blockages which cause stress and strain. in return the body, mind and soul are up lifted.<br><span class="red-body-2">Available Spa: 60 min $118*.</span></p>
+            <p><span class="red-body">Hot Stone Therapy</span><br>Experience the ultimate in relaxation. Stone massage involves the application of heated stones to key points on the body, allowing an intense penetrating heat which eases muscle aches, improves circulation, relieves back pain, and reduces stress. The warmth of the stones promotes deep healing by expanding the blood vessels and relaxing the nervous system, alleviating symptoms of insomnia and arthritic conditions while melting away the tension and stresses of daily life. This unique indulgence is not to be missed!<br><span class="red-body-2">Hot Stone Therapy in the Spa: 60 min $166.*</span></p>
+            </article>
+        </div>
+    </div>    
+</div>
+
+<!--SCRUBS, WRAPS AND FACIALS-->
+<div id="s5-con">
+    <div id="s5-hero-con" class="grid-con">                
+        <div id="s5-heading-box" class="col-span-full">
+            <h2 class="hero-img-h2"><span>Couples Resort</span><br>Scrubs, Wraps and Facials</h2>
+        </div>           
+    </div>
+    
+    <div class="grid-con">
+        <div id="s5-text" class="col-span-full line-separator">
+            <article id="s5-text-column1">
+                <h2 class="hidden">Scrubs, Wraps and Facials</h2>
+            <p><span class="red-body">Scrub, Wrap and Facial in the Spa</span><br>Experience Organic luxury at its finest. Try any of the following combinations with the guidance of your Therapist: Chocolate Delight Body Wrap with a Coconut Sugar Scrub, Pear and Green Apple Body Scrub/Wrap, Blueberry Soy Scrub/Wrap, or one of our seasonally available treatments. The Sugar Scrub will polish your skin to a radiant glow. Complete your treat with our Custom Facial, tailored to your needs.<br><span class="red-body-2">1 hour 45min $270.*</span></p>
+            <p><span class="red-body">Scrub and Wrap in the Spa</span><br>Find your inner self with our Sugar Scrub and an indulgent Wrap to revitalize your skin.<br><span class="red-body-2">1 hour 30 min $173.*</span></p>
+            <p><span class="red-body">Signature Custom Facial in the Spa</span><br>Our Spa Therapists will evaluate your skin and tailor your facial to what your skin needs - from Oily to Sensitive, Rosacea to Dry, let us pamper and nourish your skin to find that radiant you underneath.<br><span class="red-body-2">1 hour plus a 15 min consultation $132.*</span></p>
+            </article>
+        </div>
+    </div>    
+</div>
+
+<!--WAXING SERVICES-->
+<div id="s6-con">
+    <div id="s6-hero-con" class="grid-con">                
+        <div id="s6-heading-box" class="col-span-full">
+            <h2 class="hero-img-h2"><span>Couples Resort</span><br>Waxing Services</h2>
+        </div>           
+    </div>
+    
+    <div class="grid-con">
+        <div id="s6-text" class="col-span-full line-separator">
+            <article id="s6-text-column1">
+                <h2 class="hidden">Waxing Services</h2>
+            <p><span class="red-body">Space available on a walk-in basis only.<br>See office for pricing.</span><br>~ Eye Brows ~ Upper Lip ~ Chin <br>~ Face (includes eyebrows, chin and upper lip)<br>~ Arms ~ Half Leg ~ Full Leg ~ (Women's) Bikini<br>~ Under Arms ~ Men Chest ~ Men Back</p>
+            </article>
+        </div>
+    </div>    
+</div>
+
+<!--SPA PRODUCTS-->
+<section id="ss7-hero-con" class="grid-con">             
+    <div id="ss7-heading-box" class="col-span-full">
+        <h3 class="hero-img-h3"><span>Couples Resort</span><br>Spa Products</h3>
+    </div> 
+</section>
+
+<div class="grid-con">
+    <div class="col-span-full line-separator"></div>
+    <div class="col-span-full ss7-image-con" id="hot-tub">
+        <div class="ss7-image">
+            <img src="images/ss7-logo.jpg" alt="eminence_skincare_logo">
+        </div>
+        <a href="https://eminenceorganics.com/ca"><span class="red-body-2">WORLD RENOWNED EMINENCE HANDMADE ORGANIC SKINCARE</span></a> 
+        <p>We are proud to offer the Eminence Organic Skin Care line offers a truly exquisite experience with products that are so natural that you can see the fresh fruit pulps, seeds, and smell the real herbs. The philosophy is simple and natural, and it fits with the modern need of finding a natural skin care solution.</p>                 
+    </div>
+</div> 
+
+<!--SPA POLICIES AND INFORMATION-->
+<div id="s8-con">
+    <div id="s8-hero-con" class="grid-con">
+        <div id="book-now-s8" class="book-now col-start-3 col-span-2"><!--column starts at line 3 and spans 2 columns-->
+            <p>Book Now</p>
+        </div>                  
+        <div id="s8-heading-box" class="col-span-full">
+            <h2 class="hero-img-h2"><span>Couples Resort</span><br>Spa Policies and Information</h2>
+        </div>           
+    </div>
+    
+    <div class="grid-con">
+        <div id="s8-text-1" class="col-span-full line-separator">
+            <article id="s8-text-column1">
+                <h2 class="hidden">Spa Policies and Information</h2>
+                <div class="s8-body-box">
+                    <p><span class="red-body">For Success in an Algonquin Spa Experience in Rejuvenation please pre-book your appointment.</span></p>
+                    <p>Please note that we cannot guarantee that even with a pre-booking that you will receive your appointment due to illness or extenuating circumstances.</p>
+                    <p>However, we will inform you as soon as we are aware and work diligently to work with you to find a possible alternative to your booking.</p>
+                </div>
+                <div class="s8-body-box">
+                    <p><span class="red-body">We have 6 Spa Treatment Rooms.</span></p>
+                    <p>When you arrive please have on loose comfortable clothing if you are having Facials.</p>
+                    <p>Body Molding and Body wraps you will just have on your robe and an undergarment, and can change in the Treatment Room.</p>
+                    <p>Appointments can be held between 9:00 am-9:00 pm.</p>
+                    <p>Appointments can be made for up to 2 people at a time, depending on accommodation size and availability of the Spa Practitioners.</p>
+                </div>
+            </article>
+        </div>
+        <div id="s8-text-2" class="col-span-full line-separator">
+            <article id="s8-text-column1-2">
+                <h2 class="hidden">Spa Policies and Information PT.2</h2>
+                <div class="s8-body-box">
+                    <p><span class="red-body">Tipping Policies</span></p>
+                    <p>100 Percent of the full treatment price will be charged to your account for cancellations and no-shows made less than twelve (12) hours prior to the appointment time.</p>
+                    <p>* Treatments will automatically be charged to your account, add 13% HST. Please observe a <span class="red-body-2">NO EXTRA TIPPING</span> policy, as we wish that you would rather take another appointment, do another activity, have another wine or stay another night… any of these will help all, far more than a single extra tip.</p>
+                </div>
+            </article>
+        </div>
+        <div id="s8-text-3" class="col-span-full line-separator">
+            <article class="s8-body-box">
+                <h2 class="hidden">Unforseen Circumstances</h2>
+                <p><span class="red-body">Unforseen Circumstances</span></p>
+                <p>
+                    It is very rare that one of our Spa Professionals gets sick or 
+                    has a family emergency and we understand it is extremely 
+                    disappointing to not have the treatment you requested. 
+                    Staff will make every effort in finding an alternative time in 
+                    the day or during your stay with another therapist, 
+                    sometimes involving a slightly different Treatment. 
+                    We appreciate our guests for being so patient during these 
+                    unforeseen circumstances. 
+                </p>
+                <p>Currently if there is a cancellation and you cannot be accommodated, there will be no Spa charge to your room.</p>
+                <p>
+                    A Free Voucher for a 1 hour (Not RMT) Spa Treatment 
+                    will now be provided for your next getaway at 
+                    the Couples Resort.
+                </p>
+                <p>
+                    The Policy change allows us not only to make sure there is no 
+                    out of pocket expense (the cost of the treatment) but that we 
+                    will also compensate you beyond what the Couples Resort 
+                    could not provide you.
+                </p>
+                <p>Thank You & Enjoy in Our Pleasure,<br><span class="red-body-2">John Sorensen, President.</span></p>
+            </article>
+        </div>
+    </div>    
+</div>
+
+<!--Dining Hours-->
+<div id="s9-con">
+    <div id="s9-hero-con" class="grid-con">             
+        <div id="s9-heading-box" class="col-span-full">
+            <h2 class="hero-img-h2"><span>Couples Resort</span><br>Plan Your Spa Experience at Couples Resort</h2>
+        </div>           
+    </div>
+    <section class="grid-con">
+        <h2 class="hidden">Contact Information</h2>
+        <div id="s9-text" class="line-separator col-span-full">
+            <p><span class="red-body">Ultimate Relaxtion Awaits...</span></p>
+            <p>Thank you for taking the time to learn more about the spa activities we are proud to offer at Couples Resort.</p>
+            <p>Please fill out the form below to plan your custom spa experience:</p>
+        </div>
+        <div id="s9-form" class="col-span-full">
+            <form action="email.php" method="POST" enctype="text/plain">
+                <input name="fullName" type="text" placeholder="First & Last Name">
+                <input name="contactInfo" type="text" required placeholder="Phone Number or Email">
+                <input name="contactInfo" type="text" required placeholder="MM/DD/YYYY">
+                <textarea name="msg" placeholder="List the Spa Services you would like to book..."></textarea>
+                <input name="submit" id="s9-submit-button" type="submit" value="Send">
+            </form>
+            <div class="checkbox-container">
+                <input type="checkbox" id="s9-agree-checkbox" name="agree-checkbox" required>
+                <span><label for="agree-checkbox">I agree to the terms and conditions</label></span>
+            </div>
+        </div>
+    </section>
+   
+</div>
+
+<!--FAQ-->
+        <div id="faq-con" class="grid-con">
+                <div class="col-span-full">
+                    <h2><span>Couples Resort</span><br>FAQ</h2>
+                </div>
+                <section class="col-span-full faq-items line-separator">
+                    <h3>Check-in/Check-out</h3>
+                </section>
+                <section class="col-span-full faq-items">
+                    <h3>All-Inclusive</h3>
+                </section>
+                <section class="col-span-full faq-items">
+                    <h3>Dining Hours &amp; Dress Code</h3>
+                </section>
+                <section class="col-span-full faq-items">
+                    <h3>Amenities In-room</h3>
+                    <div id="faq-text-con">
+                        <!--these lists are seperated becuase in desktop they will stack beside eachother-->
+                        <div id="faq-list-group1">
+                            <ul>
+                                <li><a href="#">Private Out Door Hot Tubs</a></li>
+                                <li><a href="#">Fibre-Optic Internet - Free WIFI 50 inch Television</a></li>
+                                <li><a href="#">Free - Netflix Video Streaming</a></li>
+                                <li><a href="#">Walkout Spacious Lakeside Balcony</a></li>
+                                <li><a href="#">European Shower (2 or more heads)</a></li>
+                            </ul>
+                        </div>
+                        <div id="faq-list-group2">
+                            <ul>
+                                <li><a href="#">Private Out Door Hot Tubs</a></li>
+                                <li><a href="#">Fibre-Optic Internet - Free WIFI 50 inch Television</a></li>
+                                <li><a href="#">Free - Netflix Video Streaming</a></li>
+                                <li><a href="#">Walkout Spacious Lakeside Balcony</a></li>
+                                <li><a href="#">European Shower (2 or more heads)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+      
+        </div>
+
+<!--Contact-->
+        <section id="contact-hero-con" class="grid-con">
+            <div id="contact-hero-heading-box" class="col-span-full">
+                <h2 class="hero-img-h2"><span>Couples Resort</span><br> Contact</h2>
+            </div>
+        </section>
+
+            
+        <section class="grid-con">
+            <h2 class="hidden">Contact Information</h2>
+            <div id="contact-hero-text" class="line-separator col-span-full">
+                <p>Thank you for taking the time to learn more about our resort and why we are Ontario's number one choice for couples looking to reconnect. For reservation enquiries and further information, please complete our contact form below. Or if you prefer to talked call us at our toll free number listed below.</p>
+            </div>
+            <div id="contact-hero-address" class="col-span-full">          
+                <h3>Couples Resort (Inc.)</h3>
+                <p>1198 Osprey Rd, (End of)<br>
+                Minden, Soyers Lake, ON, <br>K0M 2K0</p>
+                <h3 class="hidden">Phone, Fax and Email</h3>
+                <p>Toll Free:+1 877 201-1156<br>
+                    FAX:+1 613 638 2217<br>
+                    E-mail: info&#64;coupleresort.com </p>         
+            </div>
+            <div id="contact-hero-form" class="col-span-full">
+                <form action="email.php" method="POST" enctype="text/plain">
+                    <input name="fullName" type="text" placeholder="First & Last Name">
+                    <input name="contactInfo" type="text" required placeholder="Phone Number or Email">
+                    <textarea name="msg" placeholder="Enter your questions, comments or concerns here..."></textarea>
+                    <input name="submit" id="submit-button" type="submit" value="Send">
+                </form>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agree-checkbox" name="agree-checkbox" required>
+                    <span><label for="agree-checkbox">I agree to the terms and conditions</label></span>
+                </div>
+            </div>
+        </section>
+<!--Footer-->  
+        <footer id="footer-hero" class="grid-con">        
+                <section id="footer-contact-info" class="col-span-full">
+                    <h3>Couples Resort</h3>
+                    <p>1198 Osprey Rd, (End of)<br>
+                        Minden, Soyers Lake, ON, <br>
+                        K0M 2K0
+                    </p>
+                    <p>
+                        Toll Free:+1 877 201-1156<br>
+                        FAX:+1 613 638 2217<br>
+                        E-mail: info&#64;coupleresort.com
+                    </p>
+                </section>
+                <div id="footer-privacy" class="col-span-full line-separator">
+                    <p id="price-policy">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing. ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy </p>
+                </div>
+        </footer>
+        </div>
+        <script src="js/main.js"></script>   
+    </body>
+</html>
